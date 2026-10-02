@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-label="shell-mcp - one command, exit code first">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#15202b"/>
+      <stop offset="55%" stop-color="#1c2a38"/>
+      <stop offset="100%" stop-color="#243746"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d7a1e4"/>
+      <stop offset="100%" stop-color="#f0c4ea"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a4f60"/>
+      <stop offset="100%" stop-color="#2a3a48"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="76%" cy="48%" r="28%">
+      <stop offset="0%" stop-color="#d7a1e4" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#d7a1e4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#8fa3b4" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="420" fill="url(#sky)"/>
+  <rect width="1280" height="420" fill="url(#grid)"/>
+  <ellipse cx="980" cy="200" rx="280" ry="150" fill="url(#glow)"/>
+
+  <g transform="translate(72,56)">
+    <text x="0" y="64" fill="#f4f7fa" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="64" font-weight="700" letter-spacing="-1">shell-mcp</text>
+    <text x="2" y="104" fill="#d7a1e4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="2">ONE COMMAND  &#183;  EXIT CODE  &#183;  STDIO</text>
+  </g>
+
+  <g transform="translate(690,118)" filter="url(#soft)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <rect width="510" height="196" rx="12" fill="#101820" stroke="#3a4f60" stroke-width="2"/>
+    <rect width="510" height="36" rx="12" fill="#243746"/>
+    <rect y="18" width="510" height="18" fill="#243746"/>
+    <circle cx="22" cy="18" r="6" fill="#c45c4a"/>
+    <circle cx="42" cy="18" r="6" fill="#e8a317"/>
+    <circle cx="62" cy="18" r="6" fill="#7ec8c3"/>
+    <text x="248" y="23" text-anchor="middle" fill="#9fb3c5" font-size="12">/workspace</text>
+    <text x="24" y="78" fill="#7ec8c3" font-size="18">$</text>
+    <text x="48" y="78" fill="#f4f7fa" font-size="18">echo start</text>
+    <text x="24" y="112" fill="#c9d7e3" font-size="18">start</text>
+    <text x="24" y="156" fill="#d7a1e4" font-size="18" font-weight="700">exit: 0</text>
+  </g>
+
+  <g transform="translate(72,300)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700">
+    <rect width="140" height="28" rx="6" fill="#3f5870" stroke="#d7a1e4"/>
+    <text x="70" y="19" text-anchor="middle" fill="#f4f7fa">command_run</text>
+    <g transform="translate(156,0)">
+      <rect width="150" height="28" rx="6" fill="url(#card)" stroke="#6f8799"/>
+      <text x="75" y="19" text-anchor="middle" fill="#c9d7e3">cwd = --root</text>
+    </g>
+    <g transform="translate(322,0)">
+      <rect width="132" height="28" rx="6" fill="url(#card)" stroke="#6f8799"/>
+      <text x="66" y="19" text-anchor="middle" fill="#c9d7e3">timeout 124</text>
+    </g>
+  </g>
+</svg>
